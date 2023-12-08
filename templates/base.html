@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+{% include "includes/head_links.html" %}
+<body>
+<div class="wrapper">
+    <!-- Start header -->
+    {% include "includes/base_header.html" %}
+    <!-- End header -->
+
+    <!-- Start main content -->
+    {% block main %}
+
+    {% endblock %}
+    <!-- End main content -->
+
+    <!-- Start footer -->
+    {% include "includes/base_footer.html" %}
+    <!-- End footer -->
+</div>
+{% include "includes/footer_links.html" %}
+</body>
+
+</html>
