@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: gunicorn shopin.wsgi:application --bind 0.0.0.0:3000
+    volumes:
+      - .:/app
+      - static_volume:/app/public/static
+      - media_volume:/app/public/media
+    ports:
+      - "3000:3000"
+    environment:
+      - DJANGO_ENV=production
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - static_volume:/app/public/static
+      - media_volume:/app/public/media
+
+volumes:
+  static_volume:
+  media_volume:
