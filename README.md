@@ -36,10 +36,6 @@ To ensure quality and reliability, follow these steps to run automated tests:
 docker-compose run web python manage.py test
 ```
 
-## 🌍 Deployment
-
-Add notes about deploying this on a live system here.
-
 ## 🤝 Contributing to Shopin
 
 Contributions are what make the open-source community an amazing place to learn, inspire, and create. Any contributions you make to *Shopin* are **greatly appreciated**.
