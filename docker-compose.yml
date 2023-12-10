@@ -3,7 +3,8 @@ version: '3'
 services:
   web:
     build: .
-    command: gunicorn shopin.wsgi:application --bind 0.0.0.0:3000
+    command: >
+      sh -c "python manage.py migrate && gunicorn shopin.wsgi:application --bind 0.0.0.0:3000"
     volumes:
       - .:/app
       - static_volume:/app/public/static
@@ -12,6 +13,19 @@ services:
       - "3000:3000"
     environment:
       - DJANGO_ENV=production
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: shopin_db
+      POSTGRES_USER: shopin_user
+      POSTGRES_PASSWORD: 12345shopin
 
   nginx:
     image: nginx:latest
@@ -25,3 +39,4 @@ services:
 volumes:
   static_volume:
   media_volume:
+  postgres_data:

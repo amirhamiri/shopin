@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-08 18:08+0330\n"
+"POT-Creation-Date: 2023-12-11 01:02+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
 #: .\accounts\apps.py:7
 msgid "accounts"
 msgstr "حساب های کاربری"
@@ -48,20 +47,16 @@ msgid "Login"
 msgstr "ورود"
 
 #: .\accounts\templates\accounts\login_form.html:25
-#, fuzzy
-#| msgid "Phone number"
-msgid "Insert your phone number"
-msgstr "شماره تلفن"
+msgid "Enter your phone number"
+msgstr "شماره تلفن خود را وارد کنید"
 
 #: .\accounts\templates\accounts\login_form.html:30
 msgid "password"
 msgstr "گذرواژه"
 
 #: .\accounts\templates\accounts\login_form.html:34
-#, fuzzy
-#| msgid "Invalid phone or password."
-msgid "Insert your password"
-msgstr "گذرواژه یا شماره تلفن اشتباه است"
+msgid "Enter your password"
+msgstr "گذرواژه خود را وارد کنید"
 
 #: .\accounts\templates\accounts\login_form.html:41
 msgid "Remember me"
@@ -81,14 +76,8 @@ msgstr "ورود موفقیت آمیز بود"
 
 #: .\accounts\views.py:22
 msgid "Invalid phone or password."
-msgstr "گذرواژه یا شماره تلفن اشتباه است"
+msgstr "شماره تلفن یا گذرواژه اشتباه است"
 
 #: .\templates\includes\footer_links.html:47
 msgid "Message"
 msgstr "پیام"
-
-#~ msgid "Your account is inactive."
-#~ msgstr "حساب کاربری شما فعال نیست"
-
-#~ msgid "Change"
-#~ msgstr "تغییر"
