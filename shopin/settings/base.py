@@ -85,7 +85,6 @@ LANGUAGE_CODE = "en-us"
 LANGUAGES = [
     ('en-us', 'English'),
     ('fa-ir', 'فارسی'),
-    # Add other languages as needed
 ]
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 TIME_ZONE = "UTC"
@@ -95,7 +94,6 @@ USE_I18N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
-
 
 STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR / "assets"]

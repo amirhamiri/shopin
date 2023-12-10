@@ -1,11 +1,10 @@
 #!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
 import os
 import sys
 
 
 def main():
-    """Run administrative tasks."""
+
     if os.environ.get('DJANGO_ENV') == 'production':
         os.environ.setdefault("DJANGO_SETTINGS_MODULE", "shopin.settings.production")
     else:

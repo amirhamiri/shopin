@@ -1,6 +1,5 @@
 from .base import *
 
-from corsheaders.defaults import default_headers
 
 DEBUG = False
 print("hiiiiiiiiiiiiiiiiiiiiiiii", DEBUG)
