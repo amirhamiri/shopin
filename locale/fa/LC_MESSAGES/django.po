@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-11 01:02+0330\n"
+"POT-Creation-Date: 2023-12-13 02:31+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,27 +17,53 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
 #: .\accounts\apps.py:7
 msgid "accounts"
 msgstr "حساب های کاربری"
 
-#: .\accounts\models.py:10 .\accounts\templates\accounts\login_form.html:21
+#: .\accounts\forms.py:9
+msgid "Repeat your password"
+msgstr "گذرواژه خود را تکرار کنید"
+
+#: .\accounts\forms.py:16 .\accounts\templates\accounts\login_form.html:25
+msgid "Enter your phone number"
+msgstr "شماره تلفن خود را وارد کنید"
+
+#: .\accounts\forms.py:18 .\accounts\templates\accounts\login_form.html:34
+msgid "Enter your password"
+msgstr "گذرواژه خود را وارد کنید"
+
+#: .\accounts\forms.py:27
+msgid "Passwords don't match"
+msgstr "گذرواژه ها مشابه نیستند"
+
+#: .\accounts\forms.py:34
+msgid "Phone number already exists"
+msgstr "شماره تلفن از قبل ثبت شده است"
+
+#: .\accounts\forms.py:40
+msgid "Password must be at least 8 characters"
+msgstr "گذرواژه باید حداقل شامل 8 کاراکتر باشد"
+
+#: .\accounts\models.py:9 .\accounts\templates\accounts\login_form.html:21
+#: .\accounts\templates\accounts\register_form.html:46
 msgid "Phone number"
 msgstr "شماره تلفن"
 
-#: .\accounts\models.py:11
+#: .\accounts\models.py:10
 msgid "Is admin"
 msgstr "مدیر"
 
-#: .\accounts\models.py:12
+#: .\accounts\models.py:11
 msgid "Is active"
 msgstr "فعال"
 
-#: .\accounts\models.py:20
+#: .\accounts\models.py:19
 msgid "User"
 msgstr "کاربر"
 
-#: .\accounts\models.py:21
+#: .\accounts\models.py:20
 msgid "Users"
 msgstr "کاربران"
 
@@ -46,17 +72,10 @@ msgstr "کاربران"
 msgid "Login"
 msgstr "ورود"
 
-#: .\accounts\templates\accounts\login_form.html:25
-msgid "Enter your phone number"
-msgstr "شماره تلفن خود را وارد کنید"
-
 #: .\accounts\templates\accounts\login_form.html:30
+#: .\accounts\templates\accounts\register_form.html:55
 msgid "password"
 msgstr "گذرواژه"
-
-#: .\accounts\templates\accounts\login_form.html:34
-msgid "Enter your password"
-msgstr "گذرواژه خود را وارد کنید"
 
 #: .\accounts\templates\accounts\login_form.html:41
 msgid "Remember me"
@@ -70,11 +89,25 @@ msgstr "کاربر جدید هستید؟"
 msgid "register"
 msgstr "ثبت نام"
 
-#: .\accounts\views.py:19
+#: .\accounts\templates\accounts\register_form.html:14
+msgid "Register"
+msgstr "ثبت نام"
+
+#: .\accounts\templates\accounts\register_form.html:71
+msgid "repeat password"
+msgstr "گذرواژه خود را تکرار کنید"
+
+#: .\accounts\views.py:23
+#, fuzzy
+#| msgid "Login successful."
+msgid "Register successful."
+msgstr "ورود موفقیت آمیز بود"
+
+#: .\accounts\views.py:38
 msgid "Login successful."
 msgstr "ورود موفقیت آمیز بود"
 
-#: .\accounts\views.py:22
+#: .\accounts\views.py:41
 msgid "Invalid phone or password."
 msgstr "شماره تلفن یا گذرواژه اشتباه است"
 
